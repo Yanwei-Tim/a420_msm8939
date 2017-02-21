@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2012 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+     
+       android:paddingStart="16dp"
+    android:paddingEnd="16dp"
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:systemui="http://schemas.android.com/apk/res-auto"
+  
+    style="@style/BrightnessDialogContainer"
+    android:background="@color/extend_bglg"
+    >
+
+    <!-- android:visibility="gone" -->
+    <ImageView
+        android:id="@+id/brightness_icon"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="2dp"
+        android:src="@drawable/ic_sysbar_brightness"
+        android:contentDescription="@null"
+         />
+
+    <com.android.systemui.settings.ToggleSlider
+        android:id="@+id/brightness_slider"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:contentDescription="@string/accessibility_brightness"
+        android:importantForAccessibility="no"
+        systemui:text="@string/status_bar_settings_auto_brightness_label" />
+    
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="2dp"
+        android:layout_marginTop="5dp"
+       
+         >
+    	<CheckBox
+       	 android:id="@+id/auto_birght"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:padding="5dp"
+  		android:layout_centerHorizontal="true"
+        />
+    	
+    	<TextView
+ 			android:id="@+id/auto_text"
+    	    android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+    	     android:text="@string/status_bar_settings_auto_brightness_label"
+    	     android:layout_centerHorizontal="true"
+    	     android:layout_alignParentBottom="@id/auto_birght"
+    	     android:layout_marginTop="28dp"
+    	     android:textSize="11sp"
+    	     android:textColor="#333333"
+    	    />
+    
+    </RelativeLayout>
+
+</LinearLayout>

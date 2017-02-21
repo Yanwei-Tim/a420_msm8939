@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/search_connect"
+    android:layout_width="match_parent"
+    android:layout_height="28dp"
+    android:background="#CDD7DE"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    >
+    
+    <RelativeLayout 
+         android:id="@+id/connect"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:layout_marginTop="8dp"
+         >
+       <TextView
+            android:id="@+id/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:text="@string/qs_connect"
+            android:layout_alignParentLeft="true"
+            android:textSize="14sp"
+            android:textColor="#305C83"
+            />
+        
+       <TextView
+            android:id="@+id/hite_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:text="@string/qs_tip"
+            android:layout_alignParentRight="true"
+            android:textSize="12sp"
+            android:textColor="#305C83"
+            />    
+    </RelativeLayout>
+    
+</LinearLayout>
+
