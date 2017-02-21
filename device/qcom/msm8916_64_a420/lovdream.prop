@@ -1,0 +1,118 @@
+#
+# HY property
+#
+ro.hw_version=A420_V1.00_PCB
+ro.build.display.id=MMB29M.W2017KEU1APK1
+ro.product.ui_model=SM-W2017
+ro.product.wifi_ssid=SM-W2017
+ro.product.wifi.p2p.name=SM-W2017
+ro.product.bluetooth_name=SM-W2017
+ro.product.brand=SM-W2017
+ro.product.manufacturer=samsung
+ro.build.inter_version=msm8916_A420_V2_01_20170210_user
+ro.product.fullmodel=SM-W2017
+ro.product.uafullmodel=SM-W2017
+ro.product.manufacturer_code=samsung
+ro.product.model=SM-W2017
+ro.device.model=SM-W2017
+ro.product.operator=CT
+#ro.product.option=cts
+#o.product.option=ct
+#o.product.ct=1
+#ro.product.cta=1
+#ro.product.nolightsensor=1
+ro.product.nodistancesensor=0
+#ro.product.tpinsteadsensor=1
+#ro.product.fastbrightness=1
+ro.product.nofm=0
+ro.product.compass=1
+ro.product.hasbuttonlight=1
+#ro.product.twocolorlights=1
+ro.product.gyrosensor=1
+ro.product.nfc=true
+#ro.product.funskey=1
+#ro.product.breathing_light=1
+#ro.product.hottf=1
+ro.product.otg=1
+ro.product.eightpinotg=1
+ro.product.eightpin = 1
+ro.product.fourteenpin = 0
+ro.product.backcharging=1
+ro.product.norecerver=0
+ro.product.backmic=1
+ro.product.resetkey=1
+#ro.product.cts=1
+ro.product.5gwifi=0
+ro.product.low_mem_size=50
+ro.product.min_mem_size=30
+ro.product.hall=0
+ro.product.barometer=0
+persist.fm.sinrth=1
+persist.fm.sinrsampales=50
+
+#
+# HY property add by xiaciping
+#
+persist.radio.calls.on.ims=true
+persist.radio.vrte_logic=1
+persist.radio.domain.ps=true
+persist.radio.jbims=1
+persist.radio.VT_ENABLE=1
+persist.radio.VT_HYBRID_ENABLE=1
+
+# Moved from vendor spec.default.prop by zhiyu
+# Set the default build as ssss
+persist.radio.multisim.config=dsds
+
+# Set the default spec as Default
+#persist.env.spec=ChinaTelecom 
+ro.config.ringtone=Over_the_Horizon.ogg
+ro.config.ringtone_2=Over_the_Horizon.ogg
+ro.config.notification_sound=Grace_Note.ogg
+ro.config.message_sound_card1=Wind_Chime.ogg
+ro.config.message_sound_card2=Wind_Chime.ogg
+ro.config.alarm_alert=Morning_Flower.ogg
+#set camera modle and make
+persist.camera.exiftagid.make=samsung
+persist.camera.exiftagid.model=SM-W2017
+ro.camera.fullcountsound=1
+
+ro.com.android.mobiledata=true
+
+gsm.version.baseband=W2017KEU1APK1
+persist.sys.bandversion=W2017KEU1APK1
+ro.com.android.dataroaming=false
+ro.product.rom.size=17179869184
+
+ro.config.doublescreen=1
+
+# default language
+persist.sys.language=zh
+persist.sys.country=CN
+
+# default timezone
+persist.sys.timezone=Asia/Shanghai
+#persist.sys.confirm.timezone=Europe/London
+persist.radio.mode_pref_nv10=1
+
+
+persist.sys.isUsbOtgEnabled=true
+
+#wangqing.yu add for Beidou GPS
+persist.sys.location.bd.mode=2
+persist.sys.output.nmea=0
+persist.sys.location.beidou=0
+persist.sys.bd.sbas=1
+persist.sys.location.original=1
+#add by zzj
+persist.sys.ublox=1
+#wangqing.yu add for u-blox fw info
+persist.sys.ublox.num=null
+persist.sys.ublox.hw=null
+persist.sys.ublox.ext=null
+persist.sys.ublox.rom=null
+persist.sys.ublox.fwver=null
+persist.sys.ublox.protver=null
+persist.sys.ublox.rate=2
+
+debug.doze.component=com.android.deskclock/.Screensaver

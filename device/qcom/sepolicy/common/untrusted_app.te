@@ -1,0 +1,40 @@
+# access to perflock
+unix_socket_send(untrusted_app, mpctl, mpdecision)
+unix_socket_connect(untrusted_app, mpctl, mpdecision)
+
+# diag device node access is restricted to untrusted_app
+neverallow untrusted_app diag_device:chr_file rw_file_perms;
+
+# test apps needs to communicate with imscm
+# using binder call
+userdebug_or_eng(`
+  binder_call(untrusted_app, imscm)
+')
+
+# for finding wbc_service
+allow untrusted_app wbc_service:service_manager find;
+
+# using binder call
+userdebug_or_eng(`
+  allow untrusted_app improve_touch_service:service_manager find;
+  binder_call(untrusted_app, hbtp);
+')
+#added by shaozhaochuang for finger
+allow untrusted_app csfinger_device: chr_file{read  write  ioctl  open};
+# for finding gba_auth_service
+allow untrusted_app gba_auth_service:service_manager find;
+
+# wangqing.yu add for 8 pin
+allow untrusted_app ext_dev_type:chr_file rw_file_perms;
+allow untrusted_app ext_dev_type:lnk_file {read write open};
+allow untrusted_app ext_dev_type:file {read write open};
+allow untrusted_app ext_dev_type:dir {search};
+allow untrusted_app serial_device:chr_file rw_file_perms;
+allow untrusted_app serial_device:file {read write open};
+
+#wangqing.yu add for usb camera
+allow untrusted_app usb_device:dir {read write open search};
+allow untrusted_app usb_device:chr_file rw_file_perms;
+allow untrusted_app usb_device:file {read write open};
+allow untrusted_app untrusted_app:netlink_kobject_uevent_socket { read create bind setopt };
+allow untrusted_app video_device:chr_file rw_file_perms;

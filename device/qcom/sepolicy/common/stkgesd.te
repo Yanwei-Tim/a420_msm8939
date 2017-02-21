@@ -1,0 +1,40 @@
+# ==============================================
+# Policy File of /system/binstkgesd Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type stkgesd_exec , exec_type, file_type;
+type stkgesd ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# Custom Policy Rule
+# ==============================================
+
+permissive stkgesd;
+init_daemon_domain(stkgesd)
+
+
+#allow stkgesd system_data_file:file create;
+#allow stkgesd system_data_file:file white;
+allow stkgesd system_data_file:file {read open};
+#allow stkgesd system_data_file:file open;
+
+# sysfs rw
+allow stkgesd kernel:dir search;
+allow stkgesd kernel:file { read open };
+allow stkgesd sysfs:file write;
+
+
+# input device rw
+allow stkgesd self:capability { kill};

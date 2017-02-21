@@ -1,0 +1,11 @@
+type install_apk, domain;
+type install_apk_exec, exec_type, file_type;
+
+init_daemon_domain(install_apk);
+
+allow install_apk apk_data_file:dir create_dir_perms;
+allow install_apk apk_data_file:file create_file_perms;
+allow install_apk system_data_file:dir { write add_name remove_name rename unlink };
+allow install_apk system_data_file:file { open read write create append lock rename unlink };
+allow install_apk shell_exec:file { execute read open execute_no_trans };
+allow install_apk self:capability { sys_nice dac_override setuid setgid fowner chown fsetid kill net_admin sys_module net_raw};

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+     <color name="battery_saver_mode_color">#00849D</color><!-- deep orange 600  #fff4511e -->
+</resources>

@@ -1,0 +1,99 @@
+#
+# HY property
+#
+ro.hw_version=P800_V1.00_PCB
+ro.build.display.id=E7151_V1.0
+ro.product.ui_model=E7153
+ro.product.wifi_ssid=E7153
+ro.product.wifi.p2p.name=E5153
+ro.product.bluetooth_name=E7153
+ro.product.brand=E7153
+ro.product.manufacturer=UniStrong
+ro.build.inter_version=msm8939_P803_EE7153_V1_02_20170110_userdebug
+ro.product.fullmodel=E7153
+ro.product.uafullmodel=E7153
+ro.product.manufacturer_code=UniStrong
+ro.product.model=E7153
+ro.device.model=E7153
+ro.product.operator=CT
+#ro.product.option=cts
+#o.product.option=ct
+#o.product.ct=1
+#ro.product.cta=1
+#ro.product.nolightsensor=1
+ro.product.nodistancesensor=1
+#ro.product.tpinsteadsensor=1
+#ro.product.fastbrightness=1
+ro.product.nofm=1
+ro.product.compass=1
+ro.product.hasbuttonlight=1
+#ro.product.twocolorlights=1
+ro.product.gyrosensor=1
+ro.product.nfc=true
+#ro.product.funskey=1
+#ro.product.breathing_light=1
+#ro.product.hottf=1
+ro.product.externalante=1
+ro.product.sideotg=1
+ro.product.otg=1
+ro.product.eightpinotg=1
+ro.product.eightpin = 0
+ro.product.fourteenpin = 1
+ro.product.backcharging=1
+ro.product.norecerver=1
+ro.product.backmic=1
+#ro.product.cts=1
+ro.product.5gwifi=1
+ro.product.low_mem_size=50
+ro.product.min_mem_size=30
+ro.product.hall=1
+ro.product.barometer=0
+persist.fm.sinrth=1
+persist.fm.sinrsampales=50
+
+#
+# HY property
+#
+
+# Moved from vendor spec.default.prop by zhiyu
+# Set the default build as ssss
+persist.radio.multisim.config=ssss
+
+# Set the default spec as Default
+#persist.env.spec=ChinaTelecom 
+ro.config.ringtone=Pyxis.ogg
+ro.config.ringtone_2=Pyxis.ogg
+ro.config.notification_sound=Drip.ogg
+ro.config.message_sound_card1=Drip.ogg
+ro.config.message_sound_card2=Drip.ogg
+ro.config.alarm_alert=Argon.ogg
+#set camera modle and make
+persist.camera.exiftagid.make=E7153
+persist.camera.exiftagid.model=E7153
+ro.camera.fullcountsound=1
+
+ro.com.android.mobiledata=true
+
+gsm.version.baseband=MSM8939
+ro.com.android.dataroaming=false
+ro.product.rom.size=17179869184
+
+#ro.config.doublescreen=1
+
+# default language
+persist.sys.language=zh
+persist.sys.country=CN
+
+# default timezone
+persist.sys.timezone=Asia/Shanghai
+persist.sys.confirm.timezone=Asia/Shanghai
+persist.radio.mode_pref_nv10=1
+
+
+persist.sys.isUsbOtgEnabled=true
+
+#wangqing.yu add for Beidou GPS
+persist.sys.location.bd.mode=1
+persist.sys.output.nmea=0
+persist.sys.location.beidou=1
+persist.sys.bd.sbas=1

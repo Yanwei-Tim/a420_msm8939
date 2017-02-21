@@ -1,0 +1,13 @@
+type mm-audio-ftm, domain;
+type mm-audio-ftm_exec, exec_type, file_type;
+
+init_daemon_domain(mm-audio-ftm)
+
+allow mm-audio-ftm system_file:file { execute read open execute_no_trans };
+
+#fix bug  of cit test for vice-mac  add by chr
+allow mm-audio-ftm audio_device:dir search;
+allow mm-audio-ftm audio_device:chr_file { read write open ioctl};
+#allow mm-audio-ftm audio_device:chr_file open;
+#allow mm-audio-ftm audio_device:chr_file ioctl;
+#end
